@@ -23,7 +23,7 @@ Self-hosted SSH- und Remote-Desktop-Management-Plattform. Kostenloser Ersatz fü
 ### Voraussetzungen
 
 - Docker + Docker Compose
-- Port 8888 frei
+- Port frei (Standard: 8888)
 
 ### Setup
 
@@ -32,26 +32,9 @@ mkdir -p /DATA/AppData/termix
 docker compose up -d
 ```
 
-Termix ist erreichbar unter: `http://192.168.178.20:8888`
-
-## Eingebundene Server
-
-| Name | IP | Protokoll |
-|------|----|-----------|
-| Lifebook | 192.168.178.20 | SSH |
-| Pi-Frigate | 192.168.178.30 | SSH |
-
-## Domain
-
-Erreichbar über Cloudflare Tunnel: `termix.isbacar.de`
-
 ## Daten
 
 Alle Daten werden gespeichert unter: `/DATA/AppData/termix`
-
-## Batch-Scripts
-
-Das Repo ist in den `sync-push-gitea.bat` / `sync-pull-gitea.bat` Scripts integriert.
 
 ## Nützliche Befehle
 
